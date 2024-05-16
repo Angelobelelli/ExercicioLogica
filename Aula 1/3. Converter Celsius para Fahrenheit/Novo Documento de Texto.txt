@@ -1,0 +1,4 @@
+1- Recolher a temperatura em celsius 
+2- Multiplicar o valor por  1,8
+3- Com o resultado  some 32
+4- Assim vc tera o resultado em Fahrenheit

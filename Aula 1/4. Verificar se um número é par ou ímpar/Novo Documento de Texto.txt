@@ -1,0 +1,4 @@
+1-recolher um numero qualquer 
+2- Dividir esse numero por 2 
+3- Verificar se possui resto nessa divisao 
+4- Se possuir o numero é impar, SENAO é par 
