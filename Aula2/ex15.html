@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function calcularClassificacao(nivel) {
+    if (nivel >= 9 && nivel <= 10) {
+        return "A";
+    } else if (nivel >= 7 && nivel <= 8) {
+        return "B";
+    } else if (nivel >= 5 && nivel <= 6) {
+        return "C";
+    } else if (nivel >= 3 && nivel <= 4) {
+        return "D";
+    } else if (nivel >= 0 && nivel <= 2) {
+        return "R";
+    } else {
+        return "Nível inválido";
+    }
+}
+
+function exibirClassificacaoNPC(nome, nivel) {
+    let classificacao = calcularClassificacao(nivel);
+    alert("Nome: " + nome + ", Classificação: " + classificacao);
+}
+
+// Exemplo de uso
+let nomeNPC = prompt("Digite o nome do NPC:");
+let nivelNPC = parseInt(prompt("Digite o nível do NPC (0-10):"));
+
+exibirClassificacaoNPC(nomeNPC, nivelNPC);
+
+</script>
+</html>
