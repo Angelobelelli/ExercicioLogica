@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        let nomeProfessor = prompt("Digite o nome dos professor:");
+         let horasTrabalho = prompt("Digite as horas no de aula");
+        let nivelProfessor = prompt("Digite o nivel do Professor: ");
+        let valorHora = 0;
+        
+    switch (nivelProfessor) {
+        case "01":
+            const nivel1 = 12.00;
+           valorHora = nivel1 * horasTrabalho;
+           alert("O professor " + nomeProfessor + "recebe o salario de R$: " + valorHora);
+        break;
+        case "02" :
+            const nivel2 = 17.00;
+            valorHora = nivel1 * horasTrabalho;
+            alert("O professor " + nomeProfessor + "recebe o salario de R$: " + valorHora);
+        break;
+        case "03" :
+            const nivel3 = 25.00;
+           valorHora = nivel3 * horasTrabalho;
+           alert("O professor " + nomeProfessor + "recebe o salario de R$: " + valorHora);
+        break;
+        default:
+                alert("Não existe professor desse nível. ");
+                break;
+                
+
+    }
+  </script>
+</html>
