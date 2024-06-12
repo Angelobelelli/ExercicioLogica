@@ -9,31 +9,31 @@
     
 </body>
     <script>
-        let contaenergia = prompt("Digite se é uma resendencia(01), Comercio (02) ou Industria(03)");
-        let valorKWH = prompt("Digite o valor KW gastado no mes:  ")
-        let valorTotal = 0;
-        
-    switch (contaenergia) {
-        case "01":
-            const Residência = 0.60 ;
-            valorTotal = Residência * valorKWH;
-           alert("O valor da conta do mês R$: " + valorTotal);
-        break;
-        case "02" :
-            const Comércio =  0.48;
-            valorTotal = Comércio * valorKWH;
+            let contaenergia = prompt("Digite se é uma resendencia(01), Comercio (02) ou Industria(03)");
+            let valorKWH = prompt("Digite o valor KW gastado no mes:  ")
+            let valorTotal = 0;
+            
+        switch (contaenergia) {
+            case "01":
+                const Residência = 0.60 ;
+                valorTotal = Residência * valorKWH;
             alert("O valor da conta do mês R$: " + valorTotal);
-        break;
-        case "03" :
-            const Indústria = 1.29 ;
-            valorTotal = Indústria * valorKWH;
-           alert("O valor da conta do mês R$: " + valorTotal);
-        break;
-        default:
-                alert("Olá Digite novamente");
-                break;
-                
+            break;
+            case "02" :
+                const Comércio =  0.48;
+                valorTotal = Comércio * valorKWH;
+                alert("O valor da conta do mês R$: " + valorTotal);
+            break;
+            case "03" :
+                const Indústria = 1.29 ;
+                valorTotal = Indústria * valorKWH;
+            alert("O valor da conta do mês R$: " + valorTotal);
+            break;
+            default:
+                    alert("Olá Digite novamente");
+                    break;
+                    
 
-    }
+        }
   </script>
 </html>

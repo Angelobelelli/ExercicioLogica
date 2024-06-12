@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+        let quantidadeComprada = parseInt(prompt("Digite a quantidade comprada do item:"));
+        let codigoProduto = parseInt(prompt("Digite o codigo do item: \n Prduto 01 : 1001" + "\n Prduto 02 : 1324" + "\n Prduto 03 : 6548" + "\n Prduto 04 : 0987" + "\n Prduto 05 : 7623"));
+        let calculo = 0;
+
+
+        switch (codigoProduto){
+            case 1001:
+            const p1 = 5.32;
+            calculo = quantidadeComprada * p1;
+            alert("O resultado da operação é: \n" + calculo);
+            break;
+
+
+            case 1324:
+            const p2 = 6.45 ;
+            calculo = quantidadeComprada * p2 ;
+            alert("O resultado da operação é: \n" + calculo);
+            break;
+
+            case 6548:
+            const p3 = 2.37 ;
+            calculo = quantidadeComprada * p3;
+            alert("O resultado da operação é: \n" + calculo);
+            break;
+
+            case 987 :
+            const p4 = 5.32;
+            calculo = quantidadeComprada * p4;
+            alert("O resultado da operação é: \n" + calculo);
+            break;
+
+            case 7623:
+            const p5 = 6.45 ;
+            calculo = quantidadeComprada * p4;
+            alert("O resultado da operação é: \n" + calculo);
+            break;
+            
+            default: 
+            alert("Codigo invalido");
+            break;
+
+
+        }
+</script>
+</html>
