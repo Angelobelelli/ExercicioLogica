@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let pessoas = [];
+    let numPessoas = parseInt(prompt("Digite o número de pessoas:"));
+
+    for (let i = 0; i < numPessoas; i++) {
+        let nome = prompt("Digite o nome da pessoa:");
+        let sexo = prompt("Digite o sexo da pessoa (M/F):");
+        let idade = parseInt(prompt("Digite a idade da pessoa:"));
+        let saude = prompt("A saúde da pessoa está boa? (S/N):");
+
+        pessoas.push({ nome, sexo, idade, saude });
+    }
+
+    let aptas = 0;
+    let naoAptas = 0;
+
+    pessoas.forEach(pessoa => {
+        if (pessoa.idade >= 18 && pessoa.idade <= 45 && pessoa.saude.toUpperCase() === "S") {
+            aptas++;
+        } else {
+            naoAptas++;
+        }
+    });
+
+    alert(`Total de pessoas aptas: ${aptas}`);
+    alert(`Total de pessoas não aptas: ${naoAptas}`);
+
+</script>
+</html>

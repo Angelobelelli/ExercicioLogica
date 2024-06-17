@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    let alturaTotal = 0;
+    let pessoasAcimaDeDoisMetros = 0;
+
+    for (let i = 0; i < 10; i++) {
+        let altura = parseFloat(prompt(`Digite a altura da pessoa ${i + 1}:`));
+        alturaTotal += altura;
+        if (altura > 2) {
+            pessoasAcimaDeDoisMetros++;
+        }
+    }
+
+    let alturaMedia = alturaTotal / 10;
+
+    alert(`Altura média: ${alturaMedia.toFixed(2)} metros`);
+    alert(`Número de pessoas com altura superior a 2 metros: ${pessoasAcimaDeDoisMetros}`);
+
+</script>
+</html>

@@ -9,7 +9,15 @@
     
 </body>
 <script>
-     
+     let numero = parseInt(prompt("Digite um número para exibir a tabuada:"));
+    let inicio = parseInt(prompt("Digite o início da tabuada:"));
+    let fim = parseInt(prompt("Digite o fim da tabuada:"));
+
+    console.log(`Tabuada do ${numero} de ${inicio} a ${fim}:`);
+    for (let i = inicio; i <= fim; i++) {
+        alert(`${numero} x ${i} = ${numero * i}`);
+    }
+
      
 </script>
 </html>

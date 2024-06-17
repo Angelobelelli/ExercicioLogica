@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    let vezes = parseInt(prompt("Digite quantas vezes deseja lançar o dado:"));
+    let resultados = [];
+
+    for (let i = 0; i < vezes; i++) {
+        let resultado = Math.floor(Math.random() * 6) + 1; // Gera números aleatórios de 1 a 6
+        resultados.push(resultado);
+    }
+
+    alert(`Resultados dos lançamentos do dado: ${resultados.join(', ')}`);
+
+</script>
+</html>
