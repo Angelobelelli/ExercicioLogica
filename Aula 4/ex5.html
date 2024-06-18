@@ -1,0 +1,17 @@
+<script>
+    let numeroInteiro = 0;
+    let numeroElemento = 0;
+    let somatoriaAtual = 0;
+
+    while(numeroInteiro >= 0){
+        numeroInteiro = parseInt(prompt("Digite um numero inteiro: "));
+        
+        if(numeroInteiro < 0){
+        somatoriaAtual += numeroInteiro;
+        numeroElemento++;
+            } else {
+                alert("Alerta")
+        }
+    }
+    alert("A media aritimetica é: " + (somatoriaAtual/numeroElemento));
+</script>
