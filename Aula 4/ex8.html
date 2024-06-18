@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        let contadorIntervalo1 = 0;
+        let contadorIntervalo2 = 0;
+
+        while (true) {
+            let numero = parseInt(prompt("Digite um número (negativo para encerrar):"));
+            if (numero < 0) {
+                break;
+            }
+            if (numero >= 0 && numero <= 25) {
+                contadorIntervalo1++;
+            } else if (numero >= 51 && numero <= 75) {
+                contadorIntervalo2++;
+            }
+        }
+
+        alert(`Quantidade de números no intervalo [0-25]: ${contadorIntervalo1}`);
+        alert(`Quantidade de números no intervalo [51-75]: ${contadorIntervalo2}`);
+
+    </script>
+</html>

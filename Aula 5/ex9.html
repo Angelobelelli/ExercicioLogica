@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let bandas = [];
+    for (let i = 0; i < 5; i++) {
+        let nomeBanda = prompt(`Digite o nome da banda ${i + 1}:`);
+        let tipoMusicaBanda = prompt(`Digite o tipo de música da banda ${i + 1}:`);
+        let numIntegrantesBanda = parseInt(prompt(`Digite o número de integrantes da banda ${i + 1}:`));
+        let rankingBanda = parseInt(prompt(`Digite seu ranking (de 1 a 5) para a banda ${nomeBanda}:`));
+
+        let banda = {
+            nome: nomeBanda,
+            tipoMusica: tipoMusicaBanda,
+            numIntegrantes: numIntegrantesBanda,
+            ranking: rankingBanda
+        };
+
+        bandas.push(banda);
+    }
+
+    console.log("Informações das Bandas:");
+    for (let i = 0; i < bandas.length; i++) {
+        alert(`Nome: ${bandas[i].nome}`);
+        alert(`Tipo de Música: ${bandas[i].tipoMusica}`);
+        alert(`Número de Integrantes: ${bandas[i].numIntegrantes}`);
+        alert(`Ranking: ${bandas[i].ranking}`);
+        alert("---------------------------");
+    }
+
+
+</script>
+</html>

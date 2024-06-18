@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script>
     let alturaChico = 1.50;
     let alturaZe = 1.10;
@@ -11,3 +12,40 @@
     alert( anos)
     
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let somaIdades = 0;
+    let contador = 0;
+    let mediaIdades = 0;
+
+    while (true) {
+        let idade = parseInt(prompt("Digite a idade (ou um número negativo para encerrar):"));
+        if (idade < 0) {
+            break;
+        }
+        if (idade >= 18) {
+            somaIdades += idade;
+            contador++;
+        }
+    }
+
+    if (contador > 0) {
+        mediaIdades = somaIdades / contador;
+    }
+
+    alert(`Soma das idades maiores de idade: ${somaIdades}`);
+    alert(`Média das idades maiores de idade: ${mediaIdades}`);
+
+</script>
+</html>
+>>>>>>> 2b29edbc9c5b84d4c5f6a2997a911ba4efb9e87c

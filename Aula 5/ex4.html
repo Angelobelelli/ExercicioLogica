@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let frutas = [];
+    let opcao;
+
+    while (true) {
+        opcao = prompt("Selecione uma opção:\n1. Adicionar um novo elemento\n2. Mostrar todos os elementos adicionados\n0. Sair do programa");
+
+        if (opcao === "1") {
+            let novaFruta = prompt("Digite o nome da fruta:");
+            frutas.push(novaFruta);
+        } else if (opcao === "2") {
+            alert("Frutas adicionadas: " + frutas.join(", "));
+        } else if (opcao === "0") {
+            alert("Saindo do programa.");
+            break;
+        } else {
+            alert("Opção inválida. Por favor, selecione uma opção válida.");
+        }
+    }
+
+</script>
+</html>

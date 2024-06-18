@@ -9,6 +9,15 @@
     
 </body>
 <script>
+    let numero = parseInt(prompt("Digite um número para exibir a tabuada apenas dos resultados pares:"));
+    alert(`Tabuada do ${numero} com resultados pares:`);
     
+    for (let i = 1; i <= 10; i++) {
+        let resultado = numero * i;
+        if (resultado % 2 === 0) {
+            alert(`${numero} x ${i} = ${resultado}`);
+        }
+    }
+
 </script>
 </html>
