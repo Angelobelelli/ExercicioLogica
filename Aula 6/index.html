@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+
+
+    <script>
+
+        //exercicio2
+        let meuNome = "";
+        meuNome = exercicio2();
+       // alert(meuNome);
+
+        function exercicio2(meuNome){
+            return "angelo belelli";
+         
+        }
+
+
+
+        //exercicio3();
+
+        function exercicio3(){
+          let numero1 = parseFloat(prompt("Digite um numero"));
+          let numero2 = parseFloat(prompt("Digite outro numero"));
+
+            
+            alert( somar(numero1, numero2));
+            alert( subtrair(numero1, numero2));
+            alert( multiplicar(numero1, numero2));
+            alert( dividir(numero1, numero2));
+        }
+
+
+        function somar(numero1, numero2){
+           return  numero1 + numero2;
+
+        }
+        function subtrair(numero1, numero2){
+            return numero1 - numero2;
+        }
+        function multiplicar(numero1, numero2){
+            return numero1 * numero2;
+        }
+        function dividir(numero1, numero2){
+            if(numero2 == 0){
+                alert("erro");
+                }else{
+                    return numero1 / numero2;
+                }
+            }
+        
+
+
+        // exercicio4();
+
+        function exercicio4(){
+            let string1 = prompt("Digite um texto");
+            let string2 = prompt("Digite outro texto");
+
+            return alert("Esse é o meu texto " + string1 + string2);
+        }
+
+
+         
+
+       // exercicio5();
+
+        function exercicio5(idade){
+            idade = parseInt(prompt("Digite sua idade: "));
+            if (idade >= 18){
+                alert("Você é maior de idade");
+            }else{
+                alert("Você é menor de idade");
+            }
+        }   
+
+        //exercicio6();
+        function exercicio6(numero){
+            numero = parseInt(prompt("Digite sua numero: "));
+            if (numero % 2 == 0){
+                alert("Seu numero é par");
+            }else{
+                alert("Seu numero é impar");
+            }
+        }
+
+        exercicio7();
+        function exercicio7(){
+            
+        }
+
+</html>
