@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,8 @@
 
 
     <script>
+
+        
 
         //exercicio2
         let meuNome = "";
@@ -71,10 +73,11 @@
 
          
 
-       // exercicio5();
+        //exercicio5();
 
         function exercicio5(idade){
             idade = parseInt(prompt("Digite sua idade: "));
+
             if (idade >= 18){
                 alert("Você é maior de idade");
             }else{
@@ -92,9 +95,103 @@
             }
         }
 
-        exercicio7();
-        function exercicio7(){
+        //exercicio7();
+       
+        function exercicio7(n){
+            n = parseInt(prompt("Digite uma numero e veja seus antecessores:"));
+            let antecessors = [];
             
+            for(let i = 0; i < n ; i++){
+              return antecessors;
+            }
+            return antecessors;
+
         }
 
+    //exercicio8(idades);
+        
+        function exercicio8(idades){
+            let maioresDeIdade = [];
+            let menoresDeIdade = [];
+            let qtMaior = 0;
+            let qtMenor = 0;
+          
+
+            for(let i = 0; i < idades.lenght; i++){
+                 
+                if (idades[i] >= 18){
+                    maioresDeIdade.push(idades);
+                    qtMaior++;
+                    }else{
+                        menoresDeIdade.push(idades);
+                        qtMenor++;
+                    }
+
+            }
+
+            alert(`O total de pessoas maiores de idade são : ${qtMaior}`);
+            alert(`O total de pessoas maiores de idade são : ${qtMenor}`);
+
+
+
+            let numPessoas = prompt("Digite o número de pessoas:");
+           idades = [];
+
+            //colentando a idade
+            for(let i = 0; i < numPessoas; i++){
+                let idade = prompt("Digite sua idade: ");
+                 idades.push(parseInt(idade));
+ 
+             }
+        }   
+
+
+
+        verificaParidade(numeros);
+
+        // Função para verificar se os números são pares ou ímpares e contar a quantidade de cada
+        function verificaParidade(numeros) {
+            let pares = [];
+            let impares = [];
+            
+            // Itera sobre o array de números
+            for (let i = 0; i < numeros.length; i++) {
+                let numero = numeros[i];
+                if (numero % 2 === 0) {
+                    pares.push(numero); // Adiciona o número ao array de pares
+                } else {
+                    impares.push(numero); // Adiciona o número ao array de ímpares
+                }
+            }
+            
+            // Exibe os resultados
+            alert(`Números pares (total: ${pares.length}): ${pares}`);
+            alert(`Números ímpares (total: ${impares.length}): ${impares}`);
+        }
+
+        // Inicializa o array vazio
+        let numeros = [];
+
+        // Solicita ao usuário o número de números que deseja inserir
+        let numNumeros = prompt("Digite a quantidade de números que deseja inserir:");
+
+        // Converte a entrada para um número inteiro
+        numNumeros = parseInt(numNumeros);
+
+        // Coleta os números
+        for (let i = 0; i < numNumeros; i++) {
+            // Solicita o número
+            let numero = prompt(`Digite o número ${i + 1}:`);
+            
+           
+            numero = parseInt(numero);
+            
+            
+            numeros.push(numero);
+        }
+
+       
+        
+        
+    </script>
 </html>
