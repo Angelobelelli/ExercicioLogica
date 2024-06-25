@@ -11,8 +11,8 @@
 
 
 
-    <script>
-
+        <script>
+            
         //exercicio2
         let meuNome = "";
         meuNome = exercicio2();
@@ -92,9 +92,53 @@
             }
         }
 
-        exercicio7();
+      // exercicio7();
+
         function exercicio7(){
-            
+            let n = parseInt(prompt("Digite um numero: "));
+            let resultadoLoop = "";
+            for (let x = 0; x <= n; x++) {
+               resultadoLoop += ("\n" + x );
+                
+            }
+            alert(resultadoLoop);
         }
 
+
+         //exercicio8();
+
+        function exercicio8() {
+         let escolha = 1;
+         let idades = [];
+        
+         while(escolha != 0){
+            escolha = parseInt(prompt("Digite sua idade: "));
+            if(escolha != 0)
+                idades.push(escolha);
+           
+        }
+        checarIdades(idades);
+        }
+
+        function checarIdades(variavel) {
+            let MaiorIdade = [];
+            let Menoridade = [];
+
+            for (let x = 0; x < variavel.length; x++) {
+                if (variavel[x] >= 18) {    
+                    MaiorIdade.push(variavel[x]);
+                }else{
+                    Menoridade.push(variavel[x]);
+                }
+                
+
+            }
+            alert("Maiores de idade:  " + (MaiorIdade.toString()) + "\nMenor de Idade : " + (Menoridade.toString()) );
+        }
+
+
+
+        //exercicio9();
+
+    </script>
 </html>
