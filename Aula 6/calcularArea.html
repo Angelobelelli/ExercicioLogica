@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+        let numero1 = parseFloat(prompt("Digite um numero:"));
+        let numero2 = parseFloat(prompt("Digite outro numero:"));
+
+        let escolhaOperacao = parseInt(prompt("Digite a operação desejada:" + "\n" +  "1. Somar" + "\n" +  "2. Subtrair" +
+        "\n" +  "3. Multiplicar" +"\n" +  "4. Dividir" ));
+        
+        switch (escolhaOperacao) {
+                case 1:
+                     alert(somar(numero1, numero2));
+                break;
+               
+                case 2:
+                     alert(subtrair(numero1, numero2));
+                break;
+
+                case 3:
+                     alert(multiplicar(numero1, numero2));
+                break;
+
+                case 4:
+                     alert(dividir(numero1, numero2));
+                break;
+        }
+
+
+        function somar(numero1, numero2) {
+           return  numero1 + numero2;
+        }
+        
+        function subtrair(numero1, numero2) {
+            return numero1 - numero2;
+        }
+        
+        function multiplicar(numero1, numero2) {
+            return numero1 * numero2;
+        }
+        
+        function dividir(numero1, numero2) {
+            if(numero2 == 0){
+                alert("erro");
+            }else{
+                return numero1 / numero2; 
+            }
+                     
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            
+            
+        }
+</script>
+</html>
