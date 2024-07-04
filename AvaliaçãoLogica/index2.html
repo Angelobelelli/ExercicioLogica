@@ -1,0 +1,27 @@
+<script>
+    
+    
+    let soma = 0;
+let contador = 0;
+
+while (true) {
+  let num = parseInt(prompt("Digite um número (ou 0 para sair): "));
+
+  if (num === 0) {
+    break;
+  }
+
+  if (num % 2 === 0) {
+    soma += num;
+    contador++;
+  }
+}
+
+if (contador > 0) {
+  let media = soma / contador;
+  alert(`A média dos números pares é: ${media.toFixed(2)}`);
+} else {
+  alert("Nenhum número par foi digitado.");
+}
+
+</script>

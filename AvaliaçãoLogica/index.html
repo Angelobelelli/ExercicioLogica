@@ -1,59 +1,22 @@
 <script>
-  let produtos = [];
-
-    while (true) {
-        let escolha = prompt("Sistema de Gerenciamento de Estoque\n1. Registrar um novo produto\n2. Listar todos os produtos\n3. Vender um produto\n4. Reabastecer um produto\n5. Sair");
-
-        if (escolha === "1") {
-            let nomeProduto = prompt("Digite o nome do produto:");
-            let precoProduto = parseFloat(prompt("Digite o preço do produto:"));
-            let quantidadeInicial = parseInt(prompt("Digite a quantidade inicial em estoque:"));
-            let fornecedor = prompt("Digite o nome do fornecedor:");
-
-            produtos.push({ nomeProduto, precoProduto, quantidadeInicial, fornecedor });
-            alert(`Produto ${nomeProduto} registrado com sucesso!`);
-
-
-        } else if (escolha === "2") {
-            alert("Produtos atuais em estoque:");
-            for (let i = 0; i < produtos.length; i++) {
-
-            alert(`#${i + 1}: ${produtos[i].nomeProduto} - Preço: ${produtos[i].precoProduto} - Quantidade: ${produtos[i].quantidadeInicial} - Fornecedor: ${produtos[i].fornecedor}`);
-            }
-
-        } else if (escolha === "3") {
-            let nomeProdutoVenda = prompt("Digite o nome do produto que deseja vender:");
-            for (let i = 0; i < produtos.length; i++) {
-            if (produtos[i].nomeProduto === nomeProdutoVenda) {
-                if (produtos[i].quantidadeInicial > 0) {
-                produtos[i].quantidadeInicial--;
-                alert(`Produto ${nomeProdutoVenda} vendido com sucesso! Quantidade restante: ${produtos[i].quantidadeInicial}`);
-
-                } else {
-                alert(`Produto ${nomeProdutoVenda} está atualmente fora de estoque.`);
-                }
-                break;
-            }
+    let palavras = ["carro" , "oscar",  "imagem"];
+    let palavra = palavras[Math.floor(Math.random() * palavras.length)];
+    
+    let resposta = prompt("Qual é essa palavra? \n" + embaralharPalavra());
+        if(resposta == palavra){
+             alert("Parabéns, você acertou!")
+        }else{
+            alert("Que pena, você errou! A palavra era " + palavra);
         }
+    
+    function embaralharPalavra() {
+        let palavraEmbaralhada = [];
+        
+        palavraEmbaralhada = palavra.split('');
+        palavraEmbaralhada = palavraEmbaralhada.sort();
+        let x  = palavraEmbaralhada.join("");
+       
+        return x.toLowerCase();
+    }
 
-        } else if (escolha === "4") {
-            let nomeProdutoReabastecer = prompt("Digite o nome do produto que deseja reabastecer:");
-            let quantidadeAdicionar = parseInt(prompt("Digite a quantidade que deseja adicionar ao estoque:"));
-            for (let i = 0; i < produtos.length; i++) {
-           
-            if (produtos[i].nomeProduto === nomeProdutoReabastecer) {
-                produtos[i].quantidadeInicial += quantidadeAdicionar;
-                alert(`Produto ${nomeProdutoReabastecer} reabastecido com sucesso! Nova quantidade: ${produtos[i].quantidadeInicial}`);
-                break;
-            }
-            }
-
-        } else if (escolha === "5") {
-            alert("Tchau!");
-            break;
-
-        } else {
-            alert("Opção inválida. Por favor, tente novamente.");
-        }
-}
 </script>
