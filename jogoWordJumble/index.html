@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let palavras = ["carro" , "oscar",  "imagem"];
+    let palavra = palavras[Math.floor(Math.random() * palavras.length)];
+    
+    let resposta = prompt("Qual é essa palavra? \n" + embaralharPalavra());
+        if(resposta == palavra){
+             alert("Parabéns, você acertou!")
+        }else{
+            alert("Que pena, você errou! A palavra era " + palavra);
+        }
+    
+    function embaralharPalavra() {
+        let palavraEmbaralhada = [];
+        
+        palavraEmbaralhada = palavra.split('');
+        palavraEmbaralhada = palavraEmbaralhada.sort();
+        let x  = palavraEmbaralhada.join("");
+       
+        return x.toLowerCase();
+    }
+
+</script>
+</html>
