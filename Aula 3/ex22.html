@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let m2 = parseInt(prompt("Digite quantos M² você irá pintar"))
+        let area_para_pintar = (m2 / 6)
+
+        let escolha = prompt("Restante de tinta para comprar " + area_para_pintar + " , escolha qual você quer (Latas) (Galão)")
+
+        let latas = (area_para_pintar / 18)
+        let galao = (area_para_pintar / 3.6 )
+
+        switch (escolha){
+            case "Latas":
+                alert("Quantidade de tinta a serem compradas " + latas)
+                break;
+            case "Galão":
+                alert("Quantidade de tinta a serem compradas " + galao)
+                break;
+        }
+        
+
+    </script>
+    
+</body>
+</html>

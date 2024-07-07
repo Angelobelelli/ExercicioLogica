@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let a = parseInt(prompt("Digite o comprimento do lado a: "));
+        let b = parseInt(prompt("Digite o comprimento do lado b: "));
+        let c = parseInt(prompt("Digite o comprimento do lado c: "));
+
+        if(a + b <= c || a+ c <= b || b+ c <= a){
+            alert("os valores não formam um triângulo.");
+        }
+
+        else{
+            let s = (a + b + c) / 2;
+            let area = Math.sqrt(s * (s - a) * (s-b) * (s - c));
+            alert("A área do trinângulo é " + area)
+        
+        }
+
+    </script>
+    
+</body>
+</html>
